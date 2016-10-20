@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /slider.html
+Allow: /
+Sitemap: http://sevweddance.ru/Sitemap.xml
+Host: http://sevweddance.ru

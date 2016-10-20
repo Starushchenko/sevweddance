@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+	<loc>http://sevweddance.ru/</loc>
+	<lastmod>2016-09-25T23:24:11+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://sevweddance.ru/index.html</loc>
+	<lastmod>2016-09-25T23:24:12+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>http://sevweddance.ru/faq.html</loc>
+	<lastmod>2016-09-25T23:24:14+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+</urlset>

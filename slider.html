@@ -1,0 +1,64 @@
+<NOINDEX>
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>FlexSlider 2</title>
+
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script defer src="js/jquery.flexslider.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            SyntaxHighlighter.all();
+        });
+        $(window).load(function () {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="slider-container" class="cf">
+
+        <div id="slider-main" role="main">
+            <section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/kitchen_adventurer_cheesecake_brownie.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/kitchen_adventurer_lemon.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/kitchen_adventurer_donut.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/kitchen_adventurer_caramel.jpg" />
+                        </li>
+                        <li>
+                            <img src="../../picture%20(23).jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+</NOINDEX>
