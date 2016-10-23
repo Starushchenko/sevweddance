@@ -38,10 +38,9 @@
         <main>
             <section class="navigation">
                 <div class="menu-opener">
-                    <a>Меню</a>
-                    <span class="menu-toggle"></span>
+                    <a href="">Меню<span class="menu-toggle"></span></a>
                 </div>
-                <nav class="main-nav clearfix">
+                <nav class="main-nav main-nav-nojs clearfix">
                     <ul>
                         <li><a href="index.html#about-link">О нас</a></li>
                         <li><a href="index.html#features-link">Преимущества</a></li>
@@ -60,8 +59,18 @@
                     <p> Мы, будучи профессиональными танцовщиками в Севастопольском Академическом театре танца, а также хореографами-постановщиками со стажем, сделаем ваш танец незабываемым и выразим в нём всю вашу историю любви. Классический венский вальс или веселый микс, страстное танго или заводной рок-н-ролл - мы учтём все ваши пожелания, и вместе подберем музыку, подходящую именно вам. Не стоит стесняться, даже если никогда не пробовали танцевать. Поверьте, вы ни за что не пожалеете и приятно удивитесь, снова и снова пересматривая свадебное видео.</p>
                 </div>
                 <div class="about-right">
-                    <div class="badge-wrapper"> <img src="img/main/teacher-badge-1.png" width="294" height="294" alt="Екатерина Подбелло"> </div>
-                    <div class="badge-wrapper"> <img src="img/main/teacher-badge-2.png" width="294" height="294" alt="Игорь Минько"> </div>
+                    <div class="badge-wrapper">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/main/teacher-badge-1.png">
+                            <img src="img/main/teacher-badge-1-mobile.png" alt="Екатерина Подбелло">
+                        </picture>
+                    </div>
+                    <div class="badge-wrapper">
+                        <picture>
+                            <source media="(min-width: 769px)" srcset="img/main/teacher-badge-2.png">
+                            <img src="img/main/teacher-badge-2-mobile.png" alt="Игорь Минько">
+                        </picture>
+                    </div>
                 </div>
                 <div class="count-wrapper" id="count-wrapper">
                     <div class="counter"> <i class="fa fa-code fa-2x"><img src="img/main/counter-icon-1.png" width="74" height="53" alt=""></i>

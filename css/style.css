@@ -73,6 +73,49 @@
 }
 
 
+@media screen and (max-width: 768px) {
+    .count-wrapper {
+        box-sizing: border-box;
+        width: 320px;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .counter {
+        width: 240px;
+        height: 190px;
+        background-color: #ffffff;
+        padding: 15px 15px 0px;
+        border-radius: 40px;
+        margin: 5px 5px 10px 20px;
+        border: 5px solid #92dbe8;
+    }
+
+    .count-title {
+        font-size: 58px;
+        font-weight: bold;
+        text-shadow: none;
+        margin-top: -45px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .count-text {
+        font-size: 18px;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .fa-2x {
+        margin: 0 auto;
+        float: none;
+        display: table;
+        color: #3eb8c1;
+    }
+}
+
+
 /* ----------------GALLERY SLIDER------------------- */
 
 #slider {
@@ -1551,7 +1594,7 @@ h2 {
         font-size: 28px;
         line-height: 36px;
         color: #3eb8c1;
-        text-shadow: rgba(0,0,0,0.5) 1px 1px 70px, rgba(0,0,0,0.5) -1px 1px 2px;
+        text-shadow: rgba(0,0,0, 1) 1px 1px;
         text-align: center;
         margin-top: 230px;
         padding-left: 8px;
@@ -1674,32 +1717,73 @@ h2 {
         height: 36px;
         background: url(../img/header/phone-icon-hover.png);
     }
-
+    
+    .navigation {
+        width: 320px;
+        margin: 0 auto;
+    }
+    
+    .menu-opener {
+        position: relative;
+	    display: block;
+        background: #3eb8c1;
+        min-height: 70px;
+        text-align: center;
+        margin-top: -48px;
+        margin-bottom: -100px;
+    }
+    
+    .menu-opener a {
+        display: inline-block;
+        box-sizing: border-box;
+        padding-top: 15px;
+        width: 100%;
+        height: 70px;
+        text-decoration: none;
+        color: #fff;
+        font-size: 24px;
+        line-height: 32px;
+        text-transform: uppercase;
+        text-shadow: rgba(0,0,0, 0.6) 1px 1px;
+    }
+    
     .main-nav {
-        position: absolute;
-        top: 500px;
+        position: static;
+        margin-top: 110px;
+    }
+    
+    .menu-toggle {
+	    position: absolute;
+        background: url("../img/header/menu-toggle-mobile.png");
+        width: 19px;
+        height: 19px;
+        top: 23px;
+        right: 40px;
     }
 
     .main-nav-fixed {
-        position: fixed !important;
-        top: 0 !important;
-        width: 1366px;
-        z-index: 100;
+        position: static !important; 
+        width: 320px;
+        z-index: 0;
     }
 
     .main-nav ul {
         margin: 0;
+        margin-top: 60px;
         padding: 0;
-        width: 1366px;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
     }
 
     .main-nav li {
+        box-sizing: border-box;
         list-style: none;
         display: block;
-        width: 229px;
+        width: 320px;
         margin-right: -6px;
-        border: 3px solid #0b132b;
-        border-right: 0;
+        border: 1px solid #3eb8c1;
         height: 74px;
         background: #92dbe8;
         text-align: center;
@@ -1713,8 +1797,8 @@ h2 {
     }
 
     .main-nav li:last-child {
-        border-right: 3px solid #0b132b;
-        width: 230px;
+        border-right: 1px solid #3eb8c1;
+        width: 320px;
     }
 
     .main-nav a {
@@ -1725,7 +1809,7 @@ h2 {
         line-height: 24px;
         display: block;
         height: 100%;
-        text-shadow: #000 1px 1px 1px, #000 -1px 1px 1px, #000 1px -1px 1px, #000 -1px -1px 1px;
+        text-shadow: #3eb8c1 2px 1px 1px, #3eb8c1 -2px 1px 1px, #3eb8c1 2px -1px 1px, #3eb8c1 -2px -1px 1px;
         margin-top: 24px;
     }
 
@@ -1736,7 +1820,7 @@ h2 {
     }
 
     .main-nav-fixed {
-        position: fixed !important;
+        position: fixed;
         top: 0 !important;
         width: 1366px;
         z-index: 100;
@@ -1785,10 +1869,14 @@ h2 {
     }
 
     .about {
-        background: url("../img/main/background-1.jpg") 0 0 no-repeat;
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 320px;
+        background: url("../img/main/background-1-mobile.jpg") 0 0 no-repeat;
         background-size: cover;
-        margin-top: 110px;
-        min-height: 1277px;
+        margin-top: 0;
+        min-height: 1980px;
     }
 
     #about-link {
@@ -1801,8 +1889,8 @@ h2 {
 
     h2 {
         font-family: "Good Vibes Pro", cursive;
-        font-size: 54px;
-        line-height: 64px;
+        font-size: 36px;
+        line-height: 42px;
         font-weight: normal;
         text-shadow: 0px 0px 1px #3a506b;
         color: #3a506b;
@@ -1812,25 +1900,39 @@ h2 {
     }
 
     .about-left {
-        width: 680px;
-        margin-left: 200px;
-        float: left;
+        width: 320px;
+        margin-left: 0;
+        float: none;
+        order: 2;
+        text-align: center;
     }
 
     .about-left p {
         color: #0b132b;
-        font-size: 18px;
-        text-indent: 45px;
+        font-size: 16px;
+        line-height: 24px;
+        text-indent: 16px;
         margin-bottom: 30px;
-        margin-top: 40px;
+        margin-top: 30px;
+        padding: 0 10px;
+    }
+    
+    .about-left .mobile-hidden {
+        display: none;
     }
 
     .about-right {
-        float: right;
+        order: 1;
+        float: none;
         margin-right: 150px;
         margin-top: 20px;
     }
-
+    
+    .badge-wrapper {
+        width: 320px;
+        text-align: center;
+    }
+    
     .badge-wrapper img {
         transition-property: box-shadow;
         transition-duration: 0.5s;
@@ -1845,6 +1947,9 @@ h2 {
 
     .count-wrapper {
         clear: both;
+        order: 3;
+        display: flex;
+        flex-direction: column;
     }
 
     .counter {
