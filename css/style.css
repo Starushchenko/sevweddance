@@ -384,7 +384,6 @@ html[xmlns] .slides {
     cursor: default;
 }
 
-
 /*----------------Audio-player style-----------------*/
 
 .genre-audio-block {
@@ -2303,14 +2302,14 @@ h2 {
     .reviews-mobile .flex-direction-nav a {
         width: 57px;
         height: 57px;
-        margin: -250px 20px 0;
+        margin: -250px 50px 0;
         display: block;
         position: absolute;
         top: 50%;
-        z-index: 1;
+        z-index: 2;
         cursor: pointer;
         text-indent: -9999px;
-        opacity: 0;
+        opacity: 1;
         -webkit-transition: all .3s ease;
     }
     .reviews-mobile .flex-direction-nav .flex-next {
