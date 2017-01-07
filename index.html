@@ -24,17 +24,22 @@
             ";" + Math.random(); //-->
     </script>
     <!--/LiveInternet-->
-    <div class="container">
+    <div class="container" itemscope itemtype="http://schema.org/Organization">
         <header>
             <div class="theatre-logo"><img src="img/header/theatre-logo.png" width="46" height="46" alt="Школа танца Вадима Елизарова"></div>
-            <div class="main-logo"> <img src="img/header/studio-logo1.png" width="249" height="189" alt='Студия танца "О любви"'></div>
-            <h1>Постановка свадебного танца в Севастополе</h1>
-            <p class="tel-header"><a href="tel:+7(978)7487267">+7(978)-748-72-67</a></p>
+            <div class="main-logo"> <img itemprop="logo" src="img/header/studio-logo1.png" width="249" height="189" alt='Студия танца "О любви"'></div>
+            <h1 itemprop="name">Постановка свадебного танца в Севастополе</h1>
+            <p class="tel-header"><a href="tel:+7(978)7487267" itemprop="telephone">+7(978)-748-72-67</a></p>
             <ul class="header-icons">
-                <li><a href="mailto:Katerinka23604511@rambler.ru"><span class="icon-holder"></span></a></li>
+                <li><a href="mailto:Katerinka23604511@rambler.ru"><span class="icon-holder"><meta itemprop="email" content="katerinka23604511@rambler.ru"></span></a></li>
                 <li><a href="https://new.vk.com/e.podbello"><span class="icon-holder"></span></a></li>
                 <li><a href="tel:+7(978)7487267"><span class="icon-holder"></span></a></li>
             </ul>
+            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                <meta itemprop="streetAddress" content="Проспект Нахимова, 4">
+                <meta itemprop="addressLocality" content="Севастополь">
+            </span>
+            <span><meta itemprop="url" content="http://sevweddance.ru"</span>
         </header>
         <main>
             <section class="navigation">
