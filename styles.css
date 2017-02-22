@@ -1,0 +1,605 @@
+/*Custom CSS*/
+
+
+.cookie-message-wrap {
+    min-height: 65px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    position: relative;
+    box-shadow: 0 -25px 88px -41px rgba(0,0,0, 0.4) inset;
+}
+
+.cookie-message {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #999999;
+}
+
+@media (max-width: 991px) {
+    .cookie-message {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cookie-message {
+        margin: 4px 40px 5px 0px;
+        font-size: 12px;
+    }
+    .cookie-message-wrap {
+        min-height: 0;
+    }
+}
+
+.cookie-message-closer {
+    width: 21px;
+    height: 21px;
+    font-size: 0;
+    position: absolute;
+    right: 15px;
+    border: none;
+    background: url("img/header/close.svg");
+}
+
+/*Стили для шапки dekstop*/
+
+header {
+    position: relative;
+}
+
+.header-1 {
+    border-bottom: 2px solid #eee;
+}
+
+@media (max-width: 768px) {
+    .header-1 {
+        display: none;
+    }
+    .header-2 {
+    	display: none;
+    }
+}
+
+
+.header-phone span {
+    display: block;
+    padding: 53px 94px 16px 0;
+    text-align: center;
+}
+
+.header-phone span a {
+    font-family: "New Baskerville", serif;
+    font-size: 24px;
+    color: #000;
+    letter-spacing: 2px;
+}
+
+.header-logo {
+    margin-top: 47px;
+    margin-bottom: -17px;
+    text-align: center;
+}
+/*----------------------*/
+
+/*Стили для шапки mobile*/
+
+@media (min-width: 768px) {
+    .header-1-mobile {
+        display: none;
+    }
+    .header-2-mobile {
+        display: none;
+    }
+}
+
+.header-1-mobile .header-logo-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 60px;
+    border-bottom: 1px solid #E2E2E2;
+}
+
+.menu-button-wrap {
+    width: 55px;
+    text-align: center;
+    margin-right: -12px;
+    z-index: 3;
+}
+
+.menu-button-mobile {
+    font-size: 0;
+    display: block;
+    width: 31px;
+    height: 31px;
+    background: url("img/header/menu-button.svg");
+}
+
+
+.header-2-mobile {
+    position: absolute;
+    z-index: 5;
+    background: #fff;
+    top: 0;
+    left: -15px;
+    width: 95%;
+    padding: 0 15px;
+    box-shadow: 0 0 46px 2px rgba(0,0,0,0.3);
+    display: none;
+}
+
+.menu-mobile-header {
+    padding: 0 5px;
+    margin-bottom: 24px;
+    margin-top: 15px;
+}
+
+.menu-mobile-phone {
+    color: #000;
+    font-family: "New Baskerville", serif;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.menu-mobile-closer {
+    width: 27px;
+    height: 27px;
+    font-size: 0;
+    position: absolute;
+    right: 15px;
+    border: none;
+    background: url(/local/templates/ladyandgentleman/img/header/close.svg);
+    background-size: contain;
+}
+
+
+/*----------------------*/
+
+main {
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.main-slider {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.slider-content {
+	font-family: "New Baskerville", serif;
+    font-size: 24px;
+    position: static;
+    letter-spacing: -1px;
+    text-align: left;
+    width: 750px;
+    margin-left: 50%;
+    margin-top: -95px;
+}
+
+.slider-item-title {
+	position: static;
+    display: block;
+    font-family: "New Baskerville",serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 220px;
+    margin-left: 60%;
+    margin-top: -20px;
+    line-height: 0;
+    color: #000;
+}
+
+.slider-first-line, .slider-second-line, .slider-third-line, .slider-fourth-line {
+    margin: 0;
+    line-height: 20px;
+}
+
+.slider-second-line {
+    margin-left: 18%;
+    max-width: 75%;
+}
+
+.slider-third-line {
+    margin-left: -10%;
+}
+
+.slider-fourth-line {
+    margin-left: 5%;
+    max-width: 85%;
+}
+
+.slider-image {
+    max-width: 100%;
+}
+
+.slider-attention {
+	font-weight: bold;
+}
+
+.brand {
+    font-family: "MrPalkerson", serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 39px;
+    letter-spacing: 4px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, black 100%, transparent 75%);
+    background-position: 0 43px;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+}
+
+.slider-toggles-wrap {
+    display: flex;
+	justify-content: flex-end;
+    margin-top: -40px;
+    margin-right: 25px;
+}
+
+@media (max-width: 768px) {
+    .slider-toggles-wrap {
+        display: none;
+    }
+}
+
+.slider-toggle {
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url('img/main/toggle.svg');
+    z-index: 2;
+}
+
+.slider-toggle-current {
+    display: block;
+    width: 21px;
+    height: 21px;
+    background: url('img/main/current-toggle.svg');
+    z-index: 2;
+}
+
+.main_banners {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-left: 200px;
+}
+
+@media (max-width: 1440px) {
+    .main_banners {
+        margin-left: 0;
+    }
+}
+
+.banner {
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        width: 100%;
+    }
+}
+
+/*Макетные баннеры*/
+
+/**/
+#bx_651765591_1396 .banner-content {    
+    font-family: "New Baskerville", serif;
+    font-size: 24px;
+    display: block;
+    color: #000;
+    text-align: left;
+    padding: 0;
+}
+
+#bx_651765591_1396 .banner-title {
+    width: 310px;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    margin-top: 0;
+}
+
+#bx_651765591_1396 .banner-content span:last-child {
+    margin-left: 40px;
+}
+/**/
+
+/**/
+#bx_651765591_1397 .banner-title {
+    margin-left: 115px;
+}
+
+#bx_651765591_1397 .banner-content {
+    text-align: right;
+    padding: 0;
+}
+
+#bx_651765591_1397 .brand {
+    margin-right: 95px;
+}
+
+#bx_651765591_1397 .banner-content span:last-child {
+    margin-right: 265px;
+}
+/**/
+
+/**/
+#bx_651765591_1398 .banner-content {
+    text-align: center;
+    padding: 0 210px 0 60px;
+}
+/**/
+
+/**/
+#bx_651765591_1399 .banner-content {
+    text-align: center;
+    padding: 0 280px 0 20px;
+}
+/**/
+
+/*----------------*/
+
+.banner-image {
+    max-width: 100%;
+}
+
+.banner-title {
+    font-family: "New Baskerville", serif;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: normal;
+    color: #000;
+    line-height: 45px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    
+}
+
+.banner-content {
+    font-family: "New Baskerville", serif;
+    font-size: 24px;
+    display: block;
+    color: #000;
+    text-align: right;
+    padding: 0px 91px;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+}
+
+.banner:first-child .banner-image {
+    width: 415px;
+}
+
+footer {
+    background-color: #f6f6f6;
+}
+
+.bottom-menu-title, .subscribe-form-title {
+	font-family: "New Baskerville", serif;
+    font-style: italic;
+    font-size: 24px;
+    font-weight: normal;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+.subscribe-form-title {
+    padding-left: 0;
+}
+
+.subscribe-email {
+    border: none;
+    padding: 16px 30px;
+    border-radius: 5px;
+    color: #000;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+    width: 285px;
+    margin-bottom: 25px;
+}
+
+.subscribe-submit {
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    background: #e6e6e6;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+
+@media (min-width: 991px) and (max-width: 1100px) {
+    .subscribe-submit {
+        padding: 16px 12px;
+    }
+} 
+
+.subscribe-she, .subscribe-he {
+	opacity: 0;
+}
+
+.subscribe-she {
+    margin-left: 15px;
+}
+
+.subscribe-she+label, .subscribe-he+label {
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+
+.subscribe-she+label::before, .subscribe-he+label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 21px;
+    background: url("img/footer/radio.svg");
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.subscribe-she:checked+label::before, .subscribe-he:checked+label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 21px;
+    height: 21px;
+    background: url("img/footer/radio-checked.svg");
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.social-wrap {
+    position: relative;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 45%;
+    top: -45px;
+}
+
+@media (max-width: 1440px) {
+    .social {
+        left: 41%;
+    }
+}
+
+@media (max-width: 1199px) {
+    .social {
+        position: static;
+    }
+}
+
+.social-item {
+    
+    list-style: none;
+    margin-right: 35px;
+}
+
+.social-item a {
+font-size: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.social-fb {
+    background: url("img/footer/facebook.svg");
+    width: 16px;
+    height: 28px;
+}
+
+.social-tw {
+    background: url("img/footer/twitter.svg");
+    width: 28px;
+    height: 25px;
+    margin-top: 2px;
+}
+
+.social-vk {
+    background: url("img/footer/vk.svg");
+    width: 31px;
+    height: 18px;
+    margin-top: 5px;
+}
+
+.social-inst {
+    background: url("img/footer/instagram.svg");
+    width: 28px;
+    height: 28px;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.copyright-message {
+	margin-left: 75px;
+}
+
+.copyright-message strong {
+    font-family: "New Baskerville", serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.developer-message {
+	margin-right: 75px;
+    font-family: "Arial", sans-serif;
+    font-size: 16px;
+}
+
+.developer-message a {
+	color: #000;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.developer-message a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+
+@media (min-width: 991px) and (max-width: 1440px) {
+    .header-phone span {
+        display: block;
+        padding: 46px 0;
+        text-align: center;
+    }
+    .slider-item-title {
+        font-size: 180px;
+        margin-left: 55%;
+    }
+    .slider-content {
+        font-family: "New Baskerville", serif;
+        font-size: 24px;
+        position: static;
+        letter-spacing: -1px;
+        text-align: left;
+        width: 750px;
+        margin-left: 50%;
+        margin-top: -80px;
+    }
+    .slider-first-line {
+        margin-bottom: -20px;
+    }
+    .subscribe-email {
+        border: none;
+        padding: 16px 30px;
+        border-radius: 5px;
+        color: #000;
+        font-family: "Arial", sans-serif;
+        font-size: 16px;
+        width: 63%;
+        margin-bottom: 25px;
+    }
+    .social {
+        left: 45%;
+    }
+}
+
+.modal-background {
+    width: 100%;
+    height: 500%;
+    background: rgba(0,0,0, 0.15);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.show {
+    display: block;
+}
