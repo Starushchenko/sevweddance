@@ -24,6 +24,16 @@
     }
 }
 
+@media (max-width: 768px) {
+    .cookie-message {
+        margin: 4px 40px 5px 0px;
+        font-size: 12px;
+    }
+    .cookie-message-wrap {
+        min-height: 0;
+    }
+}
+
 .cookie-message-closer {
     width: 21px;
     height: 21px;
@@ -42,8 +52,6 @@ header {
 
 .header-1 {
     border-bottom: 2px solid #eee;
-    display: flex;
-    align-items: center;
 }
 
 @media (max-width: 768px) {
@@ -55,9 +63,10 @@ header {
     }
 }
 
+
 .header-phone span {
     display: block;
-    padding: 23px 0;
+    padding: 53px 94px 16px 0;
     text-align: center;
 }
 
@@ -69,10 +78,11 @@ header {
 }
 
 .header-logo {
+    margin-top: 47px;
+    margin-bottom: -17px;
     text-align: center;
 }
 /*----------------------*/
-
 
 /*Стили для шапки mobile*/
 
@@ -100,11 +110,50 @@ header {
     z-index: 3;
 }
 
+.menu-button-mobile {
+    font-size: 0;
+    display: block;
+    width: 31px;
+    height: 31px;
+    background: url("img/header/menu-button.svg");
+}
+
+
 .header-2-mobile {
     position: absolute;
-    z-index: 2;
+    z-index: 5;
     background: #fff;
     top: 0;
+    left: -15px;
+    width: 95%;
+    padding: 0 15px;
+    box-shadow: 0 0 46px 2px rgba(0,0,0,0.3);
+    display: none;
+}
+
+.menu-mobile-header {
+    padding: 0 5px;
+    margin-bottom: 24px;
+    margin-top: 15px;
+}
+
+.menu-mobile-phone {
+    color: #000;
+    font-family: "New Baskerville", serif;
+    font-size: 22px;
+    text-decoration: none;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.menu-mobile-closer {
+    width: 27px;
+    height: 27px;
+    font-size: 0;
+    position: absolute;
+    right: 15px;
+    border: none;
+    background: url(/local/templates/ladyandgentleman/img/header/close.svg);
+    background-size: contain;
 }
 
 
@@ -186,12 +235,15 @@ main {
 
 .slider-toggles-wrap {
     display: flex;
-}
-
-.slider-toggles-wrap {
 	justify-content: flex-end;
     margin-top: -40px;
     margin-right: 25px;
+}
+
+@media (max-width: 768px) {
+    .slider-toggles-wrap {
+        display: none;
+    }
 }
 
 .slider-toggle {
@@ -486,7 +538,6 @@ font-size: 0;
 	margin-right: 75px;
     font-family: "Arial", sans-serif;
     font-size: 16px;
-    display: none;
 }
 
 .developer-message a {
@@ -504,6 +555,7 @@ font-size: 0;
 @media (min-width: 991px) and (max-width: 1440px) {
     .header-phone span {
         display: block;
+        padding: 46px 0;
         text-align: center;
     }
     .slider-item-title {
@@ -536,4 +588,18 @@ font-size: 0;
     .social {
         left: 45%;
     }
+}
+
+.modal-background {
+    width: 100%;
+    height: 500%;
+    background: rgba(0,0,0, 0.15);
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    display: none;
+}
+
+.show {
+    display: block;
 }
